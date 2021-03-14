@@ -16,5 +16,5 @@ final Map<Widget, Widget> pages = {
   Icon(Icons.home, size: 30, color: Colors.white,): Locality(),
   Icon(Icons.event, size: 30,color: Colors.white,): Events(),
   Icon(Icons.chat, size: 30,color: Colors.white,): Home(),
-  Icon(Icons.person, size: 30,color: Colors.white,): Home(),
+  Icon(Icons.person, size: 30,color: Colors.white,): Profile(),
 };

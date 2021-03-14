@@ -14,6 +14,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class Home extends StatefulWidget {
   @override
@@ -128,7 +130,7 @@ class _HomeState extends State<Home> {
                   Container(
                     child: Text(
                       username,
-                      style: TextStyle(color: Colors.white, fontSize: 17),
+                      style: GoogleFonts.robotoMono(color: Colors.black, fontSize: 17, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -143,10 +145,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff131313),
+      backgroundColor: Color(0xFFFFEEED),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
-        title: Text("Insta Chat App"),
+        backgroundColor: Color(0xFFEF5A4C),
+        title: Text("Nearby People",
+        style: GoogleFonts.robotoMono(fontWeight: FontWeight.bold)),
         actions: [
           IconButton(
               icon: Icon(Icons.exit_to_app),
@@ -158,7 +161,8 @@ class _HomeState extends State<Home> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.message),
+        backgroundColor: Color(0xFFEF5A4C),
+          child: Icon(Icons.group_add,),
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => searchScreen()));

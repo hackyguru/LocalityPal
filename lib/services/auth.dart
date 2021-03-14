@@ -7,6 +7,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  
 
   User1 _usercheck(User user) {
     if (user != null) {
